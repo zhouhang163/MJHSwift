@@ -72,13 +72,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
     }
     //MARK:_UICollectionViewDataSource协议方法
    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        var crView: UICollectionReusableView!
+        var crView = CollectionHeaderView()
         if (kind == UICollectionElementKindSectionHeader) { // Header
-            var headView = CollectionHeaderView()
-            headView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath) as! CollectionHeaderView
-            return headView
+            crView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath) as! CollectionHeaderView
+            crView.backgroundColor = UIColor.orange
         } else { // Footer
-            crView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "footer", for: indexPath)
+            crView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerIdentifier, for: indexPath) as! CollectionHeaderView
             crView.backgroundColor = UIColor.purple
         }
         return crView
