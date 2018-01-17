@@ -73,6 +73,7 @@ class TabBarViewController: UITabBarController {
              (items[i] as AnyObject) 相当于 self.navigationController?
              **/
             (items[0] as AnyObject).navigationBar.shadowImage = UIImage()
+            (items[i] as AnyObject).navigationBar.isTranslucent = false
             //设置导航栏的背景图片(优先级高)
             (items[i] as AnyObject).navigationBar.setBackgroundImage(UIImage(named:"NavigationBar"), for:.default)
             //设置导航栏的背景颜色(优先级低)

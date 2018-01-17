@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         //设置分区缩进量
         flowLayout.sectionInset = UIEdgeInsets(top:10, left:10, bottom:10, right:10)
         //设置区头大小
-        flowLayout.headerReferenceSize = CGSize(width:SCREEN_WIDTH, height:100);
+        flowLayout.headerReferenceSize = CGSize(width:SCREEN_WIDTH, height:120);
         flowLayout.footerReferenceSize = CGSize(width:SCREEN_WIDTH, height:200);
         //创建一个UIcollectionView的布局
         //UIcollectionView的布局比较复杂，所以专门为它设计了一个布局类UIcollectionView，但是很少使用它的基类，都是使用它的子类UICollectionViewFlowLayout
@@ -64,6 +64,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         //指定业务代理
         collectionView.delegate = self
         
+        let view = UIView(frame:CGRect(x:0,y:-SCREEN_HEIGHT+10,width:SCREEN_WIDTH,height:SCREEN_HEIGHT))
+        view.backgroundColor = UIColor.withHex(hexString: MJHColor)
+        collectionView.addSubview(view)
         //添加视图
         self.view.addSubview(collectionView)
         

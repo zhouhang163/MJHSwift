@@ -30,10 +30,14 @@ class CollectionHeaderView: UICollectionReusableView {
     override func draw(_ rect: CGRect) {
         // Drawing code
         zzczBtn.frame = CGRect(x:0, y:0, width:SCREEN_WIDTH/3, height:100)
-        zzczBtn.setImage(UIImage(named:"cz"), for: .normal)
-        zzczBtn.setTitle("自助充值", for: .normal)
+//        zzczBtn.setImage(UIImage(named:"cz"), for: .normal)
+//        zzczBtn.setTitle("自助充值", for: .normal)
+        zzczBtn.set(image: UIImage(named: "cz"), title: "自助充值", titlePosition: .bottom,
+                 additionalSpacing: 10.0, state: .normal)
         self.addSubview(zzczBtn)
-
+        
+        
+        
     }
     
 

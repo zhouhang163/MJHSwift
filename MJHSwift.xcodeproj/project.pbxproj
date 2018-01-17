@@ -7,8 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4FC8685E108CC308D3E13D /* Pods_MJHSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAE3CCDFA54A9ED8A3D2085 /* Pods_MJHSwift.framework */; };
 		C869D26B200DAB6D0094FAAB /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869D26A200DAB6D0094FAAB /* CollectionHeaderView.swift */; };
 		C8772E8C200F2EAA0067F18C /* CollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8772E8B200F2EAA0067F18C /* CollectionFooterView.swift */; };
+		C8772E8E200F4A420067F18C /* UIButton+TitileImg.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8772E8D200F4A420067F18C /* UIButton+TitileImg.swift */; };
+		C8772E8F200F51310067F18C /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E96200F51310067F18C /* AFNetworking.framework */; };
+		C8772E90200F51310067F18C /* DZNEmptyDataSet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E97200F51310067F18C /* DZNEmptyDataSet.framework */; };
+		C8772E91200F51310067F18C /* IQKeyboardManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E98200F51310067F18C /* IQKeyboardManager.framework */; };
+		C8772E92200F51310067F18C /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E99200F51310067F18C /* Masonry.framework */; };
+		C8772E93200F51310067F18C /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E9A200F51310067F18C /* MJRefresh.framework */; };
+		C8772E94200F51310067F18C /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E9B200F51310067F18C /* SDWebImage.framework */; };
+		C8772E95200F51310067F18C /* SVProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8772E9C200F51310067F18C /* SVProgressHUD.framework */; };
 		C8796EAF200C3BC100F18476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8796EAE200C3BC100F18476 /* AppDelegate.swift */; };
 		C8796EB1200C3BC100F18476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8796EB0200C3BC100F18476 /* ViewController.swift */; };
 		C8796EB4200C3BC100F18476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8796EB2200C3BC100F18476 /* Main.storyboard */; };
@@ -43,8 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C450685F2ADFE82523B4FC4 /* Pods-MJHSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJHSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift.release.xcconfig"; sourceTree = "<group>"; };
 		C869D26A200DAB6D0094FAAB /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
 		C8772E8B200F2EAA0067F18C /* CollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterView.swift; sourceTree = "<group>"; };
+		C8772E8D200F4A420067F18C /* UIButton+TitileImg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TitileImg.swift"; sourceTree = "<group>"; };
+		C8772E96200F51310067F18C /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E97200F51310067F18C /* DZNEmptyDataSet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DZNEmptyDataSet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E98200F51310067F18C /* IQKeyboardManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E99200F51310067F18C /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E9A200F51310067F18C /* MJRefresh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MJRefresh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E9B200F51310067F18C /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8772E9C200F51310067F18C /* SVProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SVProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8796EAB200C3BC100F18476 /* MJHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8796EAE200C3BC100F18476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8796EB0200C3BC100F18476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,6 +83,8 @@
 		C8796EF7200C82BB00F18476 /* SwiftPch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPch.swift; sourceTree = "<group>"; };
 		C8796EF8200C82BB00F18476 /* iPhoneDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iPhoneDevice.swift; sourceTree = "<group>"; };
 		C8796EFB200C82CE00F18476 /* UIColor+valueRGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+valueRGB.swift"; sourceTree = "<group>"; };
+		CBAE3CCDFA54A9ED8A3D2085 /* Pods_MJHSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MJHSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D30F62C6AFEE39E44E8620CE /* Pods-MJHSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJHSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +92,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8772E8F200F51310067F18C /* AFNetworking.framework in Frameworks */,
+				C8772E90200F51310067F18C /* DZNEmptyDataSet.framework in Frameworks */,
+				C8772E91200F51310067F18C /* IQKeyboardManager.framework in Frameworks */,
+				C8772E92200F51310067F18C /* Masonry.framework in Frameworks */,
+				C8772E93200F51310067F18C /* MJRefresh.framework in Frameworks */,
+				C8772E94200F51310067F18C /* SDWebImage.framework in Frameworks */,
+				C8772E95200F51310067F18C /* SVProgressHUD.framework in Frameworks */,
+				AE4FC8685E108CC308D3E13D /* Pods_MJHSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +120,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C61D34E206058350635E461E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8772E96200F51310067F18C /* AFNetworking.framework */,
+				C8772E97200F51310067F18C /* DZNEmptyDataSet.framework */,
+				C8772E98200F51310067F18C /* IQKeyboardManager.framework */,
+				C8772E99200F51310067F18C /* Masonry.framework */,
+				C8772E9A200F51310067F18C /* MJRefresh.framework */,
+				C8772E9B200F51310067F18C /* SDWebImage.framework */,
+				C8772E9C200F51310067F18C /* SVProgressHUD.framework */,
+				CBAE3CCDFA54A9ED8A3D2085 /* Pods_MJHSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C8796EA2200C3BC100F18476 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +142,8 @@
 				C8796EC2200C3BC200F18476 /* MJHSwiftTests */,
 				C8796ECD200C3BC200F18476 /* MJHSwiftUITests */,
 				C8796EAC200C3BC100F18476 /* Products */,
+				DC7AFA3680609A55DEB968AF /* Pods */,
+				C61D34E206058350635E461E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -252,8 +297,18 @@
 				C8796EF7200C82BB00F18476 /* SwiftPch.swift */,
 				C8796EF8200C82BB00F18476 /* iPhoneDevice.swift */,
 				C8796EFB200C82CE00F18476 /* UIColor+valueRGB.swift */,
+				C8772E8D200F4A420067F18C /* UIButton+TitileImg.swift */,
 			);
 			path = "拓展文件";
+			sourceTree = "<group>";
+		};
+		DC7AFA3680609A55DEB968AF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D30F62C6AFEE39E44E8620CE /* Pods-MJHSwift.debug.xcconfig */,
+				1C450685F2ADFE82523B4FC4 /* Pods-MJHSwift.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C8796ED3200C3BC200F18476 /* Build configuration list for PBXNativeTarget "MJHSwift" */;
 			buildPhases = (
+				A463C4370C8513AC722FF9D8 /* [CP] Check Pods Manifest.lock */,
 				C8796EA7200C3BC100F18476 /* Sources */,
 				C8796EA8200C3BC100F18476 /* Frameworks */,
 				C8796EA9200C3BC100F18476 /* Resources */,
+				976760D7FB4621874973C975 /* [CP] Embed Pods Frameworks */,
+				92F7656A828C9021CB6A9A19 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -385,6 +443,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		92F7656A828C9021CB6A9A19 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift-resources.sh",
+				"${PODS_ROOT}/AMap3DMap/MAMapKit.framework/AMap.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		976760D7FB4621874973C975 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJHSwift/Pods-MJHSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A463C4370C8513AC722FF9D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MJHSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C8796EA7200C3BC100F18476 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -394,6 +521,7 @@
 				C869D26B200DAB6D0094FAAB /* CollectionHeaderView.swift in Sources */,
 				C8796EB1200C3BC100F18476 /* ViewController.swift in Sources */,
 				C8796EDF200C450000F18476 /* TabBarViewController.swift in Sources */,
+				C8772E8E200F4A420067F18C /* UIButton+TitileImg.swift in Sources */,
 				C8796EAF200C3BC100F18476 /* AppDelegate.swift in Sources */,
 				C8796EFC200C82CE00F18476 /* UIColor+valueRGB.swift in Sources */,
 				C8796EF1200C48AD00F18476 /* MoreViewController.swift in Sources */,
@@ -564,6 +692,7 @@
 		};
 		C8796ED4200C3BC200F18476 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D30F62C6AFEE39E44E8620CE /* Pods-MJHSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,6 +709,7 @@
 		};
 		C8796ED5200C3BC200F18476 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C450685F2ADFE82523B4FC4 /* Pods-MJHSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
