@@ -56,7 +56,7 @@ class TabBarViewController: UITabBarController {
         mineNav.tabBarItem.selectedImage = wode_selectedimage
         
         //更多
-        let moreVC = HomeViewController()
+        let moreVC = MoreViewController()
         moreVC.title = "更多"
         let moreNav = UINavigationController(rootViewController:moreVC)
         moreNav.tabBarItem.title = "更多"
@@ -72,6 +72,7 @@ class TabBarViewController: UITabBarController {
             /*
              (items[i] as AnyObject) 相当于 self.navigationController?
              **/
+            (items[0] as AnyObject).navigationBar.shadowImage = UIImage()
             //设置导航栏的背景图片(优先级高)
             (items[i] as AnyObject).navigationBar.setBackgroundImage(UIImage(named:"NavigationBar"), for:.default)
             //设置导航栏的背景颜色(优先级低)

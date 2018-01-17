@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C869D26B200DAB6D0094FAAB /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C869D26A200DAB6D0094FAAB /* CollectionHeaderView.swift */; };
+		C8772E8C200F2EAA0067F18C /* CollectionFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8772E8B200F2EAA0067F18C /* CollectionFooterView.swift */; };
 		C8796EAF200C3BC100F18476 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8796EAE200C3BC100F18476 /* AppDelegate.swift */; };
 		C8796EB1200C3BC100F18476 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8796EB0200C3BC100F18476 /* ViewController.swift */; };
 		C8796EB4200C3BC100F18476 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8796EB2200C3BC100F18476 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		C869D26A200DAB6D0094FAAB /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		C8772E8B200F2EAA0067F18C /* CollectionFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionFooterView.swift; sourceTree = "<group>"; };
 		C8796EAB200C3BC100F18476 /* MJHSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJHSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8796EAE200C3BC100F18476 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8796EB0200C3BC100F18476 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				C869D26A200DAB6D0094FAAB /* CollectionHeaderView.swift */,
+				C8772E8B200F2EAA0067F18C /* CollectionFooterView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				C8796EF9200C82BC00F18476 /* SwiftPch.swift in Sources */,
 				C8796EE5200C486A00F18476 /* HomeViewController.swift in Sources */,
 				C8796EEF200C48A400F18476 /* MineViewController.swift in Sources */,
+				C8772E8C200F2EAA0067F18C /* CollectionFooterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

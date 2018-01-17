@@ -8,11 +8,13 @@
 
 import UIKit
 
+let headerIdentifier = "header"
+
 class CollectionHeaderView: UICollectionReusableView {
     
-    let zzczBtn = UIButton(type:.custom)
-    let shBtn = UIButton(type:.custom)
-    let nfcBtn = UIButton(type:.custom)
+    var zzczBtn = UIButton(type:.custom)
+    var shBtn = UIButton(type:.custom)
+    var nfcBtn = UIButton(type:.custom)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -31,6 +33,7 @@ class CollectionHeaderView: UICollectionReusableView {
         zzczBtn.setImage(UIImage(named:"cz"), for: .normal)
         zzczBtn.setTitle("自助充值", for: .normal)
         self.addSubview(zzczBtn)
+
     }
     
 

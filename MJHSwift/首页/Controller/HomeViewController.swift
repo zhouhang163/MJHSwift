@@ -46,7 +46,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         //设置分区缩进量
         flowLayout.sectionInset = UIEdgeInsets(top:10, left:10, bottom:10, right:10)
         //设置区头大小
-        flowLayout.headerReferenceSize = CGSize(width:SCREEN_WIDTH, height:300);
+        flowLayout.headerReferenceSize = CGSize(width:SCREEN_WIDTH, height:100);
         flowLayout.footerReferenceSize = CGSize(width:SCREEN_WIDTH, height:200);
         //创建一个UIcollectionView的布局
         //UIcollectionView的布局比较复杂，所以专门为它设计了一个布局类UIcollectionView，但是很少使用它的基类，都是使用它的子类UICollectionViewFlowLayout
@@ -56,9 +56,9 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         //collectionview就是一个视图，什么控件都没有，需要自定义cell来展示文字或者图片
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: itemIdentifier)
         //注册区头
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerIdentifier)
+        collectionView.register(CollectionHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: headerIdentifier)
         //注册区尾
-        collectionView.register(UICollectionReusableView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerIdentifier)
+        collectionView.register(CollectionFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: footerIdentifier)
         //指定数据源代理
         collectionView.dataSource = self
         //指定业务代理
@@ -71,25 +71,33 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         // Do any additional setup after loading the view.
     }
     //MARK:_UICollectionViewDataSource协议方法
-   func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-        var crView = CollectionHeaderView()
-        if (kind == UICollectionElementKindSectionHeader) { // Header
-            crView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath) as! CollectionHeaderView
-            crView.backgroundColor = UIColor.orange
-        } else { // Footer
-            crView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerIdentifier, for: indexPath) as! CollectionHeaderView
-            crView.backgroundColor = UIColor.purple
+    fileprivate func extractedFunc(_ kind: String, _ collectionView: UICollectionView, _ indexPath: IndexPath) -> UICollectionReusableView {
+        var reusableHeaderview:CollectionHeaderView!
+        var reusableFooterview:CollectionFooterView!
+        if kind == UICollectionElementKindSectionHeader {
+            reusableHeaderview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerIdentifier, for: indexPath) as! CollectionHeaderView
+            reusableHeaderview.backgroundColor = UIColor.withHex(hexString: MJHColor)
+            return reusableHeaderview
         }
-        return crView
+        if kind == UICollectionElementKindSectionFooter {
+            reusableFooterview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: footerIdentifier, for: indexPath) as! CollectionFooterView
+            reusableFooterview.backgroundColor = UIColor.brown
+            return reusableFooterview
+        }
+        return reusableHeaderview
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView{
+        return extractedFunc(kind, collectionView, indexPath)
     }
     
     
-    func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSize(width:250, height:50)
-    }
-    func collectionView(_collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width:250, height:50)
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+//        return CGSize(width:250, height:50)
+//    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+//        return CGSize(width:250, height:50)
+//    }
     
     //返回CollectionView有多少分区
     func numberOfSections(in collectionView: UICollectionView) -> Int {
