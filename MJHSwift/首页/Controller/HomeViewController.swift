@@ -104,7 +104,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
     
     //返回CollectionView有多少分区
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 1
     }
     //返回一个分区有多少个Item的方法
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
