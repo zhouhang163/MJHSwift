@@ -129,6 +129,10 @@ class HomeViewController: UIViewController, UICollectionViewDataSource,UICollect
         print("扫码")
     }
     
+    func showInfo() {
+        print("showInfo😄")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
